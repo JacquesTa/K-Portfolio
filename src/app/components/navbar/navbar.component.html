@@ -1,8 +1,8 @@
 <div class="navBar">
-  <div class="icon">
-    <mat-icon>home</mat-icon>
+  <div class="circle">
+    <div class="icon">K</div>
   </div>
-  <mat-toolbar color="primary">
+  <mat-toolbar class="nav-toolbar">
     <mat-nav-list class="list-horizontal">
       <mat-list-item>
         <a href>Home</a>
@@ -21,8 +21,13 @@
   </mat-toolbar>
 
   <div class="social-media">
-    <mat-icon>home</mat-icon>
-    <mat-icon>home</mat-icon>
-    <mat-icon>home</mat-icon>
+    <share-buttons
+      theme="circles-dark"
+      [include]="['facebook', 'linkedin', 'twitter']"
+      [showIcon]="true"
+      [showText]="false"
+      class="pt-5"
+    >
+    </share-buttons>
   </div>
 </div>

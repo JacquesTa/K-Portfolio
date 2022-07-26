@@ -1,18 +1,97 @@
+// #EE4266 Paradise Pink
+// #2A1E5C russian violet
+// #0A0F0D Rich Black Fogra 39
+// #C4CBCA Silver Sand
+// #3CBBB1 Tiffany Blue
+
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Sans+Display:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,800;1,900&family=Nunito+Sans:wght@200;300;400;600;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&display=swap");
+
 .navBar {
   display: flex;
+  height: 100vh;
   flex-direction: row;
   margin-right: 150px;
   margin-left: 150px;
   margin-top: 30px;
 
-  mat-nav-list.list-horizontal {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    .mat-list-item {
-      display: inline-block;
-      height: auto;
-      width: auto;
+  .circle {
+    width: 80px;
+    height: 80px;
+    background: #f0f6f6;
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+    animation: morph 3s linear infinite;
+    transform-style: preserve-3d;
+
+    margin: auto;
+    overflow: hidden;
+    .icon {
+      font-family: Major Mono Display;
+      font-size: 70px;
+      color: #ee4266;
+      margin-top: 25px;
+      margin-left: 15px;
     }
+  }
+
+  .nav-toolbar {
+    background-color: #0a0f0d;
+    mat-nav-list.list-horizontal {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-left: 380px;
+      .mat-list-item {
+        display: inline-block;
+        height: auto;
+        width: auto;
+        text-decoration: none;
+        font-family: permanent;
+
+        &:hover {
+          text-decoration: underline;
+          color: #ee4266;
+        }
+      }
+    }
+  }
+
+  .social-media {
+    display: inline-block;
+    height: 50px;
+    width: 230px;
+    margin-top: 20px;
+
+    .social-media-item {
+    }
+  }
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    opacity: 0.89;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    transform: scale(1.03);
+    opacity: 0;
   }
 }

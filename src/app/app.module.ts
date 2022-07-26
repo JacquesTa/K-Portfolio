@@ -11,7 +11,12 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
 import { ShareIconsModule } from 'ngx-sharebuttons/icons';
+import {
+  FontAwesomeModule,
+  FaIconLibrary,
+} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -28,9 +33,17 @@ import { ShareIconsModule } from 'ngx-sharebuttons/icons';
     MatToolbarModule,
     MatListModule,
     MatIconModule,
+    ShareButtonsModule.withConfig({
+      debug: true,
+    }),
     ShareIconsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  // constructor(private library: FaIconLibrary) {
+  //   library.addIcons(faGithub);
+  // }
+}

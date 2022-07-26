@@ -29,7 +29,11 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ngx-sharebuttons/themes/circles/circles-dark-theme.scss",
+              "node_modules/ngx-sharebuttons/themes/modern/modern-dark-theme.scss",
+              "node_modules/ngx-sharebuttons/themes/modern.scss",
+              "node_modules/ngx-sharebuttons/themes/material.scss"
             ],
             "scripts": []
           },
@@ -102,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
