@@ -36,3 +36,204 @@
     font-family: Noto Sans Display;
   }
 }
+
+.firstSection {
+  margin: 0;
+  margin-top: 190px;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Noto Sans Display;
+
+  .title-section {
+    font-size: 30px;
+    color: #fff;
+  }
+  .container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .card {
+      position: relative;
+      cursor: pointer;
+
+      .card-item {
+        width: 300px;
+        height: 300px;
+        transition: 0.5s;
+        border-radius: 5%;
+      }
+
+      .card-item1 {
+        position: relative;
+        background-color: #3cbbb1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(100px);
+
+        .content {
+          img {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            max-width: 100px;
+            margin-left: 15px;
+          }
+          h3 {
+            margin-top: 10px;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            font-size: 1.5em;
+            justify-content: center;
+            align-items: center;
+            font-family: Noto Sans Display;
+          }
+        }
+      }
+
+      &:hover .card-item.card-item1 {
+        background: #ff0057;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .container .card .card-item.card-item1 .content {
+    // opacity: 0.2;
+    transition: 0.5s;
+    .card-item-image {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .container .card:hover .card-item.card-item1 .content {
+    opacity: 1;
+  }
+
+  .container .card .card-item.card-item2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-200px);
+  }
+
+  .container .card:hover .card-item.card-item2 {
+    transform: translateY(0);
+  }
+
+  .container .card .card-item.card-item2 .content p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.thirdSection {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Noto Sans Display;
+
+  .title-section {
+    margin-bottom: 100px;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .cards-area {
+    margin-top: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .card-item {
+      position: relative;
+      width: 300px;
+      height: 440px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2),
+        -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3),
+        -5px -5px 15px rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      margin: 10px;
+      transition: 0.5s;
+      background-color: #3cbbb1;
+      cursor: pointer;
+
+      &:hover .title {
+        color: #ee4266;
+        text-decoration: underline #ee4266;
+      }
+
+      .card-item-image {
+        text-align: center;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+      }
+
+      .card-item-text {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: Noto Sans Display;
+        color: #fff;
+
+        .title {
+          font-size: 20px;
+        }
+
+        .title-description {
+          margin-top: 35px;
+          margin-left: 20px;
+          margin-right: 20px;
+          line-height: normal;
+          font-size: 12px;
+        }
+
+        button {
+          margin-top: 50px;
+          background-color: #ee4266;
+          border-radius: 5px;
+          height: 30px;
+          width: 100px;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          &:hover {
+            background-color: #0a0f0d;
+          }
+        }
+      }
+    }
+  }
+}
