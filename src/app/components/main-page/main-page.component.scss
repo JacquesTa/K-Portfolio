@@ -5,6 +5,7 @@
 // #3CBBB1 Tiffany Blue
 
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Sans+Display:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,800;1,900&family=Nunito+Sans:wght@200;300;400;600;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&display=swap");
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 
 .heroSection {
   margin-top: -450px;
@@ -236,4 +237,219 @@
       }
     }
   }
+}
+
+.fourthSection {
+  height: 100vh;
+  transform: scale(0.9);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+
+  .section-left {
+    background-color: #2a1e5c;
+    font-family: Noto Sans Display;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    width: 80%;
+    .section-left-content {
+      box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+      border-radius: 12px;
+      margin-left: 90px;
+      .upper-part {
+        background: #0a0f0d;
+        padding: 4rem 4rem 2.5rem 5rem;
+        text-align: center;
+
+        border-radius: 12px 12px 0 0;
+
+        .section-img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+
+          .img {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+          }
+
+          .img img {
+            display: block;
+            width: 200px;
+          }
+        }
+
+        h2 {
+          font-size: 2rem;
+          margin: 2.2rem 0 0.6rem 0;
+          line-height: 1.2;
+          padding-bottom: 1rem;
+          border-bottom: 2px solid #ee4266;
+        }
+        h3 {
+          text-transform: uppercase;
+          font-weight: 300;
+          letter-spacing: 5px;
+          margin-top: 1.2rem;
+        }
+      }
+      .icons {
+        background: #ee4266;
+        display: flex;
+        justify-content: center;
+        padding: 0.8rem 0;
+        border-radius: 0 0 12px 12px;
+      }
+    }
+  }
+
+  .section-right {
+    background: #2a1e5c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+      font-size: 5rem;
+      text-transform: uppercase;
+      font-family: Noto Sans Display;
+    }
+
+    h1 span {
+      color: #ee4266;
+    }
+
+    h2 {
+      font-weight: 600;
+    }
+
+    .section-btns {
+      display: flex;
+      margin: 2rem 0;
+
+      .btn {
+        border: none;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 0.55rem 0;
+        width: 130px;
+        font-weight: 600;
+        background: transparent;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        color: #fff;
+
+        &:hover {
+          background: #ee4266;
+          color: #fff;
+          border-color: #ee4266;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+
+      .btn a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+
+    .section-description p {
+      font-weight: 300;
+      padding: 0.5rem;
+      opacity: 0.8;
+    }
+  }
+}
+
+.fifthSection {
+  margin-top: 160px;
+  padding-bottom: 90px;
+  .contact-container {
+    display: flex;
+    margin-left: 120px;
+    flex-direction: row;
+    background-color: #3cbbb1;
+    width: 80%;
+    height: 500px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+    .section-left {
+      margin-left: 100px;
+      .title-section {
+        font-family: Noto Sans Display;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2px;
+        margin-top: 10px;
+        margin-left: 150px;
+        box-sizing: border-box;
+
+        width: 200px;
+        font-size: 30px;
+        color: #ee4266;
+        text-transform: uppercase;
+      }
+
+      .section-img {
+        img {
+          margin-top: 50px;
+          margin-left: 150px;
+          width: 160px;
+          height: 160px;
+        }
+      }
+    }
+
+    .section-right {
+      margin-right: 190px;
+      margin-top: -20px;
+      width: 300px;
+
+      .form-group {
+        .form-container {
+          display: flex;
+          flex-direction: column;
+          .button {
+            button {
+              margin-left: 25px;
+              margin-right: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.title-about {
+  font-family: Noto Sans Display;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  margin-left: 600px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
 }
